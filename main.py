@@ -1,11 +1,11 @@
-import sipfullproxy
-import socketserver
-
-HOST, PORT = '0.0.0.0', 5060
+from sipfullproxy import *
 
 
 def main():
-    server = socketserver.UDPServer((HOST, PORT), sipfullproxy.UDPHandler)
+    print("Input ip of a device:")
+    ip = input()
+    libsetup(ip)
+    server = socketserver.UDPServer(get_address(), UDPHandler)
     server.serve_forever()
 
 
