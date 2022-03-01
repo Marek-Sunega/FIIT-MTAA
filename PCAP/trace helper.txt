@@ -1,0 +1,4 @@
+normal - normálny hovor
+decline - hovor ktorý bol odmietnutý
+register - registrácia jedneho zariadenia
+bad request - volanie na neregistrované zariadenie
