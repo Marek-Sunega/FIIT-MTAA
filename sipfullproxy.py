@@ -204,7 +204,6 @@ class UDPHandler(socketserver.BaseRequestHandler):
             if line == "":
                 break
         data.append("")
-        print(data)
         text = "\r\n".join(data)
         self.socket.sendto(text.encode(), self.client_address)
         showtime()

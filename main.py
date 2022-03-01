@@ -2,9 +2,9 @@ from sipfullproxy import *
 
 
 def main():
-    print("Input ip of a device:")
-    ip = input()
-    libsetup(ip)
+    device_ip = socket.gethostbyname(socket.gethostname())
+    print(f"SIP PROXY ip: {device_ip}")
+    libsetup(device_ip)
     server = socketserver.UDPServer(get_address(), UDPHandler)
     server.serve_forever()
 
