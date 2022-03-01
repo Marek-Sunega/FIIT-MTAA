@@ -1,4 +1,6 @@
 normal - normálny hovor
-decline - hovor ktorý bol odmietnutý
-register - registrácia jedneho zariadenia
+decline - hovor, ktorý bol odmietnutý
+register - registrácia jedného zariadenia, zmena stavového kódu (z ok na dobre)
 bad request - volanie na neregistrované zariadenie
+conference - konferenčný hovor
+forward - hovor s presmerovaním na tretie zariadenie
